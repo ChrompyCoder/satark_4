@@ -1,0 +1,21 @@
+# Global directives for all search engines
+User-agent: *
+
+# Standard CMS paths
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /config/
+Disallow: /temp/
+Disallow: /logs/
+
+# Development and Staging (High interest for attackers)
+Disallow: /dev/
+Disallow: /staging/
+Disallow: /old_site_v1/
+
+# The "Intentional" Leak
+# Hint: Participants will see this and investigate the /backup directory
+Disallow: /backup/
+
+# Sitemap location
+Sitemap: https://your-username.github.io/sitemap.xml
